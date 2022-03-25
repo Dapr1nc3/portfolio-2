@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PortList from "../portList/PortList";
 import "./Portfolio.scss";
+import {
+  featuredPortfolio,
+  webPortfolio,
+  mobilePortfolio,
+  designPortfolio,
+  contentPortfolio,
+} from "../../data";
 
 const Portfolio = () => {
   const [selected, setSelected] = useState("featured");
+  const [data, setData] = useState([]);
   const list = [
     {
       id: "featured",
@@ -26,6 +34,29 @@ const Portfolio = () => {
       title: "Content",
     },
   ];
+
+  useEffect(() => {
+    switch (selected) {
+      case "featured":
+        setData(featuredPortfolio);
+        break;
+      case "web":
+        setData(webPortfolio);
+        break;
+      case "mobile":
+        setData(mobilePortfolio);
+        break;
+      case "design":
+        setData(designPortfolio);
+        break;
+      case "content":
+        setData(contentPortfolio);
+        break;
+      default:
+        setData(featuredPortfolio);
+    }
+  }, [selected]);
+
   return (
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
@@ -40,48 +71,12 @@ const Portfolio = () => {
         ))}
       </ul>
       <div className="container">
-        <div className="item">
-          <img
-            src="https://www.livetecs.com/wp-content/uploads/2019/05/Project-Management-2.png"
-            alt=""
-          />
-          <h3>Project 1</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://www.livetecs.com/wp-content/uploads/2019/05/Project-Management-2.png"
-            alt=""
-          />
-          <h3>Project 2</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://www.livetecs.com/wp-content/uploads/2019/05/Project-Management-2.png"
-            alt=""
-          />
-          <h3>Project 3</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://www.livetecs.com/wp-content/uploads/2019/05/Project-Management-2.png"
-            alt=""
-          />
-          <h3>Project 4</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://www.livetecs.com/wp-content/uploads/2019/05/Project-Management-2.png"
-            alt=""
-          />
-          <h3>Project 5</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://www.livetecs.com/wp-content/uploads/2019/05/Project-Management-2.png"
-            alt=""
-          />
-          <h3>Project 6</h3>
-        </div>
+        {data.map((d) => (
+          <div className="item">
+            <img src={d.img} alt="" />
+            <h3>{d.title}</h3>
+          </div>
+        ))}
       </div>
     </div>
   );
