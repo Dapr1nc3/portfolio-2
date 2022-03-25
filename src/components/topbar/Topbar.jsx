@@ -19,7 +19,13 @@ const Topbar = () => {
             <span>Example@example.com</span>
           </div>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <div className="hamburg">
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
+          </div>
+        </div>
       </div>
     </div>
   );
