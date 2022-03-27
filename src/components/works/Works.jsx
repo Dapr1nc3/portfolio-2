@@ -8,23 +8,44 @@ const Works = () => {
     {
       id: "1",
       icon: "./assets/mobile.png",
-      title: "Web Design",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      img: "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+      title: "No Gear Fitness",
+      desc: "Create a application that targets people who choose to workout at home and don't have access to equipment. ",
+      img: "./assets/NGF-SS.png",
     },
     {
       id: "2",
       icon: "./assets/globe.png",
-      title: "Mobile Application",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img: "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+      title: "Work day Scheduler",
+      desc: "Application made to help a user plan their week and save notes, events, and data for user.",
+      img: "./assets/work-day-ss.png",
     },
     {
       id: "3",
       icon: "./assets/writing.png",
-      title: "Branding",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+      title: "Budget Tracker",
+      desc: "This application was made to help the user track thier funds, helping to track and help make a financial decision",
+      img: "./assets/budget-t.png",
+    },
+    {
+      id: "4",
+      icon: "./assets/writing.png",
+      title: "Weather Dashboard",
+      desc: "The application helps the user look at the weather in the designated area to plan out their day accordingly.",
+      img: "./assets/weather-day.png",
+    },
+    {
+      id: "5",
+      icon: "./assets/writing.png",
+      title: "What-2-watch",
+      desc: "One of my first group projects, love it even now it helps the user find a list of movies based on the genre they search for.",
+      img: "./assets/what-2-watch-ss.png",
+    },
+    {
+      id: "6",
+      icon: "./assets/writing.png",
+      title: "1st Portfolio",
+      desc: "My very first portfolio ever and it's very rough but I visit it often to remember how I started compared to where I am now.",
+      img: "./assets/port-1.png",
     },
   ];
 
@@ -50,14 +71,20 @@ const Works = () => {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span>Projects</span>
+                  <span>
+                    {" "}
+                    <a href="https://young-bastion-49807.herokuapp.com/">App</a>
+                  </span>
+                  <span>
+                    {" "}
+                    <a href="https://github.com/Dapr1nc3?tab=repositories">
+                      Repo
+                    </a>
+                  </span>
                 </div>
               </div>
               <div className="right">
-                <img
-                  src="https://www.worldbook.com/images/WBBlog_KidsCoding.jpg"
-                  alt=""
-                />
+                <img src={d.img} alt="" />
               </div>
             </div>
           </div>

@@ -12,12 +12,18 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
           </a>
           <div className="itemContainer">
             <Person className="icon" />
-            <span>+88 999 89 77</span>
+            <span>+(407) 953 0941</span>
           </div>
           <div className="itemContainer">
             <Mail className="icon" />
-            <span>Example@example.com</span>
+            <span>ddaprincem84@gmail.com</span>
           </div>
+          {/* <div className="itemContainer">
+            <AccountCircle className="icon" />
+            <span>
+              <a href="https://beta.crunchyroll.com/">about me</a>
+            </span>
+          </div> */}
         </div>
         <div className="right">
           <div className="hamburg" onClick={() => setMenuOpen(!menuOpen)}>

@@ -1,8 +1,8 @@
 export const featuredPortfolio = [
   {
     id: 1,
-    title: "Social Media App",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+    title: "No Gear Fitness",
+    img: "http://www.picserver.org/assets/library/2020-10-30/originals/new_projects.jpg",
   },
   {
     id: 2,

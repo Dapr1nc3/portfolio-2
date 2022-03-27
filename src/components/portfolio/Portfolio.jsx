@@ -15,7 +15,7 @@ const Portfolio = () => {
   const list = [
     {
       id: "featured",
-      title: "Featured",
+      title: "Projects",
     },
     {
       id: "web",
