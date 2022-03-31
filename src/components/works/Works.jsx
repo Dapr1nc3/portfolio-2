@@ -9,7 +9,7 @@ const Works = () => {
       id: "1",
       icon: "./assets/mobile.png",
       title: "Food 4 Thought",
-      desc: "Create a application that targets people who choose to workout at home and don't have access to equipment. ",
+      desc: "Create a application that targets people who choose to cook at home and want to make foods. ",
       img: "./assets/NGF-SS.png",
     },
     {
