@@ -8,7 +8,7 @@ const Works = () => {
     {
       id: "1",
       icon: "./assets/mobile.png",
-      title: "No Gear Fitness",
+      title: "Food 4 Thought",
       desc: "Create a application that targets people who choose to workout at home and don't have access to equipment. ",
       img: "./assets/NGF-SS.png",
     },
@@ -73,13 +73,11 @@ const Works = () => {
                   <p>{d.desc}</p>
                   <span>
                     {" "}
-                    <a href="https://young-bastion-49807.herokuapp.com/">App</a>
+                    <a href="https://immense-shelf-25976.herokuapp.com/">App</a>
                   </span>
                   <span>
                     {" "}
-                    <a href="https://github.com/Dapr1nc3?tab=repositories">
-                      Repo
-                    </a>
+                    <a href="https://github.com/Dapr1nc3/Food-App.git">Repo</a>
                   </span>
                 </div>
               </div>
